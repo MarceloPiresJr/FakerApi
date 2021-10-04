@@ -1,0 +1,4 @@
+{
+    "schema com sucesso": "GET_activities_schema.json",
+    "schema sem sucesso": "GET_activities_schema_erro.json"
+}

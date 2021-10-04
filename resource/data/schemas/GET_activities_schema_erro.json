@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "type",
+        "title",
+        "status",
+        "traceId",
+        "errors"
+    ],
+    "properties": {
+        "type": {
+            "$id": "#/properties/type",
+            "type": "string"
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string"
+        },
+        "status": {
+            "$id": "#/properties/status",
+            "type": "integer"
+        },
+        "traceId": {
+            "$id": "#/properties/traceId",
+            "type": "string"
+        },
+        "errors": {
+            "$id": "#/properties/errors",
+            "type": "object",
+            "required": [
+                "id"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/errors/properties/id",
+                    "type": "array",
+                    "items": {
+                        "$id": "#/properties/errors/properties/id/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/errors/properties/id/items/anyOf/0",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

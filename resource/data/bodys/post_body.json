@@ -1,0 +1,6 @@
+{{
+    "id":{int_id},
+    "title":{str_title},
+    "dueDate":{str_duedate},
+    "completed":{bool_completed}
+}}
